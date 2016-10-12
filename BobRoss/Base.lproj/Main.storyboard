@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +20,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Grass" translatesAutoresizingMaskIntoConstraints="NO" id="Ytx-mN-ALR">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ytx-mN-ALR" secondAttribute="height" multiplier="8:5" id="tWm-aF-Mq7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="EoK-pd-l9I">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EoK-pd-l9I" secondAttribute="height" multiplier="1:1" id="NQp-3c-1YS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="89" id="ow1-JE-s2m"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="89" id="sHt-tK-6Vm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SmallTree" translatesAutoresizingMaskIntoConstraints="NO" id="vcu-ZJ-GKm">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vcu-ZJ-GKm" secondAttribute="height" multiplier="139:230" id="coG-3j-3Oi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tree" translatesAutoresizingMaskIntoConstraints="NO" id="jtP-am-U3C">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jtP-am-U3C" secondAttribute="height" multiplier="1100:823" id="q4V-aw-Nda"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clouds" translatesAutoresizingMaskIntoConstraints="NO" id="ntS-qi-LnS">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ntS-qi-LnS" secondAttribute="height" multiplier="15:8" id="zJC-8c-KKM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KidsPlaying" translatesAutoresizingMaskIntoConstraints="NO" id="H7H-L2-g9H"/>
+                        </subviews>
                         <color key="backgroundColor" red="0.60332628909999997" green="0.65530478960000005" blue="0.81491315360000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ntS-qi-LnS" secondAttribute="trailing" constant="100" id="1rk-J0-pMg"/>
+                            <constraint firstItem="ntS-qi-LnS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="2dS-8t-AXT"/>
+                            <constraint firstItem="ntS-qi-LnS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="6IM-E8-2xh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H7H-L2-g9H" secondAttribute="trailing" constant="67" id="7dP-2H-M9s"/>
+                            <constraint firstItem="ntS-qi-LnS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Aif-7w-BDa"/>
+                            <constraint firstItem="EoK-pd-l9I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="Bpy-mf-CVP"/>
+                            <constraint firstItem="Ytx-mN-ALR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="Ccw-7Y-hwK"/>
+                            <constraint firstItem="H7H-L2-g9H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="67" id="NT1-0h-lL7"/>
+                            <constraint firstItem="vcu-ZJ-GKm" firstAttribute="bottom" secondItem="Ytx-mN-ALR" secondAttribute="top" multiplier="1.25" id="PrW-JQ-v1T"/>
+                            <constraint firstItem="vcu-ZJ-GKm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wfi-tS-jRK"/>
+                            <constraint firstItem="vcu-ZJ-GKm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="Xbk-bD-pdo"/>
+                            <constraint firstAttribute="topMargin" secondItem="EoK-pd-l9I" secondAttribute="top" id="YMu-4o-9m6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ytx-mN-ALR" secondAttribute="bottom" id="c9h-Ny-fQd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ytx-mN-ALR" secondAttribute="trailing" constant="-16" id="dFZ-jY-Iql"/>
+                            <constraint firstAttribute="trailing" secondItem="EoK-pd-l9I" secondAttribute="trailing" id="dbD-YR-EPd"/>
+                            <constraint firstItem="jtP-am-U3C" firstAttribute="bottom" secondItem="Ytx-mN-ALR" secondAttribute="top" multiplier="1.3" id="gOA-s7-GSt"/>
+                            <constraint firstItem="H7H-L2-g9H" firstAttribute="bottom" secondItem="Ytx-mN-ALR" secondAttribute="top" multiplier="1.3" id="rQx-IY-gsI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jtP-am-U3C" secondAttribute="trailing" constant="-16" id="tmz-UH-DAW"/>
+                            <constraint firstItem="H7H-L2-g9H" firstAttribute="height" secondItem="jtP-am-U3C" secondAttribute="height" multiplier="0.85" id="v6R-AX-T3L"/>
+                            <constraint firstItem="jtP-am-U3C" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="vZl-lq-5BW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,4 +80,12 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Clouds" width="3109" height="1696"/>
+        <image name="Grass" width="1280" height="800"/>
+        <image name="KidsPlaying" width="2285" height="1826"/>
+        <image name="SmallTree" width="1390" height="2300"/>
+        <image name="Sun" width="432" height="432"/>
+        <image name="Tree" width="1100" height="823"/>
+    </resources>
 </document>
